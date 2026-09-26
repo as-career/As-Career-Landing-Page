@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import logo from "../public/assets/logo.webp"
 
 const links = [
   { href: "/", label: "Home" },
@@ -25,7 +27,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#1a2a4a] to-[#274062] text-lg font-semibold text-white shadow-lg">
-            AS
+            <Image src={logo} alt="Career Consultancy logo" className="h-full w-full rounded-full object-cover" priority />
           </div>
           <div>
             <p className="text-lg font-semibold text-[#1a2a4a]">

@@ -313,7 +313,7 @@ export default function Home() {
         />
         <div className="mt-10 grid gap-8 lg:grid-cols-3">
           {placements.map((placement) => (
-            <PlacementCard key={placement.name} placement={placement} />
+            <PlacementCard key={placement.id} placement={placement} />
           ))}
         </div>
       </section>
