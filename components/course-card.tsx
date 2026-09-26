@@ -34,7 +34,7 @@ export function CourseCard({ course }: { course: Course }) {
             <MonitorPlay size={14} /> {course.mode}
           </span>
         </div>
-        <div className="text-lg font-semibold text-[#1a2a4a]">{course.fee}</div>
+        {/* <div className="text-lg font-semibold text-[#1a2a4a]">{course.fee}</div> */}
       </CardContent>
       <CardFooter className="justify-between">
         <Link
