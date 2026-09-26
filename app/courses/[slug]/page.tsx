@@ -64,9 +64,9 @@ export default async function CourseDetailPage({
             <span className="rounded-full bg-[#f9f6ed] px-4 py-2 text-slate-700">
               {course.mode}
             </span>
-            <span className="rounded-full bg-[#f9f6ed] px-4 py-2 text-slate-700">
+            {/* <span className="rounded-full bg-[#f9f6ed] px-4 py-2 text-slate-700">
               {course.fee}
-            </span>
+            </span> */}
           </div>
         </div>
 
